@@ -4,3 +4,5 @@ output.txt
 *.cph
 *.bin
 *.vscode 
+*.vscode/ 
+*.txt
