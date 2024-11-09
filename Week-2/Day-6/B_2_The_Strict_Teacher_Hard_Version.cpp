@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
 #define nl '\n'
 #define tst   \
     int t;    \
@@ -49,8 +48,7 @@ void firebird_solve()
                 left = *(--it);
             }
 
-            
-            cout << (right - left) / 2 << nl;
+                        cout << (right - left) / 2 << nl;
         }
     }
 }
