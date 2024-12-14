@@ -17,27 +17,25 @@ void firebird_solve()
         cin >> a[i];
     }
 
-    
-    vector<int> bit_counts(30, 0);
+    vector<int> bit_cnts(30, 0);
     for (int i = 0; i < n; i++)
     {
         for (int bit = 0; bit < 30; bit++)
         {
             if (a[i] & (1 << bit))
             {
-                bit_counts[bit]++;
+                bit_cnts[bit]++;
             }
         }
     }
 
-    
     vector<int> answers;
     for (int k = 1; k <= n; k++)
     {
         bool possible = true;
         for (int bit = 0; bit < 30; bit++)
         {
-            if (bit_counts[bit] % k != 0)
+            if (bit_cnts[bit] % k != 0)
             {
                 possible = false;
                 break;
@@ -47,7 +45,6 @@ void firebird_solve()
             answers.push_back(k);
     }
 
-   
     for (int i = 0; i < answers.size(); i++)
     {
         cout << answers[i] << (i == answers.size() - 1 ? "\n" : " ");

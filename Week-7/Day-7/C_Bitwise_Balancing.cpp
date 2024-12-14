@@ -1,11 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-#define nl '\n' 
-#define tst int t; cin >> t; while(t--)
+#define nl '\n'
+#define tst   \
+    int t;    \
+    cin >> t; \
+    while (t--)
 
-
-void firebird_solve(){
+void firebird_solve()
+{
     ll val_a = 0, val_b, val_c, val_d, position = 1, bit_b, bit_c, bit_d, mask = 1;
     cin >> val_b >> val_c >> val_d;
     for (ll i = 0; i < 62; i++)
@@ -47,13 +50,13 @@ void firebird_solve(){
     }
 }
 
-
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    tst{
+    tst
+    {
         firebird_solve();
     }
 
